@@ -1,0 +1,40 @@
+
+/* React app additions */
+.stats-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:24px 0 34px}
+.stat-card{display:flex;align-items:center;gap:14px;padding:20px;background:#fff;border:1px solid #e2edf4;border-radius:16px;box-shadow:0 7px 20px rgba(29,82,120,.06)}
+.stat-icon{width:48px;height:48px;border-radius:14px;background:#e8f6fd;display:grid;place-items:center;font-size:22px}
+.stat-card span{display:block;color:#7b92a8;font-size:12px}
+.stat-card strong{display:block;color:#173967;font-size:25px;margin-top:3px}
+.dashboard-welcome{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.dashboard-welcome h1{color:#173967}
+.record-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;margin-top:22px}
+.record-card{min-width:0;padding:20px;background:#fff;border:1px solid #e2eaf0;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.05);overflow-wrap:anywhere}
+.record-card h3{color:#173967;margin:0 0 12px}
+.record-card p{color:#607b95;margin:8px 0}
+.record-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.record-actions button{padding:9px 14px;border:0;border-radius:8px;background:#168ac4;color:white;cursor:pointer}
+.record-actions button:disabled{opacity:.5;cursor:not-allowed}
+.record-actions .delete-record{background:#dc4545}
+.prescription-preview{display:block;max-width:100%;max-height:360px;margin:12px 0;border-radius:10px;object-fit:contain}
+.prescription-upload-block{margin:22px 0;padding:18px;border:1px solid #d8e9f4;border-radius:14px;background:#f8fcff}
+.prescription-upload-block .form-field{margin-bottom:12px}
+.form-message{min-height:20px;color:#d94a4a;font-size:13px}
+.signup-link button,.signup-login-link button{border:0;background:transparent;color:#1478e8;font:inherit;font-weight:700;cursor:pointer}
+.signup-login-link{margin-top:18px}
+.provider-note{margin-top:16px;padding:12px;border-radius:10px;background:#f1f8fc;color:#58758d;font-size:12px}
+@media(max-width:900px){.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.dashboard-welcome{align-items:flex-start;flex-direction:column}}
+@media(max-width:600px){.stats-grid{grid-template-columns:1fr}.record-grid{grid-template-columns:1fr}.prescription-upload-block{padding:14px}}
+
+
+/* Admin module */
+.admin-panel-grid{display:grid;grid-template-columns:minmax(260px,1fr) minmax(320px,1.2fr);gap:18px;margin-top:20px;align-items:start}
+.admin-search{width:100%;margin:12px 0 16px;padding:12px 14px;border:1px solid #d4e1eb;border-radius:10px;background:#fbfdff;color:#27486b;font:inherit}
+.admin-user-list{display:grid;gap:10px}
+.admin-user-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px;border:1px solid #e3edf4;border-radius:10px;background:#fbfdff}
+.admin-user-select{display:grid;gap:4px;min-width:0;border:0;background:transparent;text-align:left;cursor:pointer;color:#294d70}
+.admin-user-select span{color:#7b92a8;font-size:12px;overflow-wrap:anywhere}
+.admin-delete-button{border:0;border-radius:8px;background:#dc4545;color:white;padding:8px 10px;cursor:pointer}
+.admin-record-row{display:grid;gap:6px;padding:12px 0;border-bottom:1px solid #edf2f6;color:#536f89}
+.admin-record-row button{justify-self:start;padding:7px 10px;border:0;border-radius:7px;background:#168ac4;color:white;cursor:pointer}
+.admin-storage-note{margin-top:18px;color:#7189a4;font-size:12px}
+@media(max-width:850px){.admin-panel-grid{grid-template-columns:1fr}}

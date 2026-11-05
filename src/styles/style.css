@@ -1,0 +1,4096 @@
+/* =====================================================
+   HEALTH RECORD SYSTEM
+   MAIN LOGIN PAGE
+===================================================== */
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #eef7fc;
+
+    color: #17335f;
+
+}
+
+
+/* =====================================================
+   LOGIN PAGE
+===================================================== */
+
+.login-page {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 55% 45%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef8ff 0%,
+            #ffffff 48%,
+            #eaf7fc 100%
+        );
+
+    overflow: hidden;
+
+}
+
+
+/* =====================================================
+   LEFT HERO
+===================================================== */
+
+.hero-section {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    padding:
+        55px
+        7vw
+        35px
+        7vw;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f3faff,
+            #eaf7fc
+        );
+
+}
+
+
+/* Decorative circles */
+
+.hero-circle {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+}
+
+
+.circle-one {
+
+    width: 500px;
+
+    height: 500px;
+
+    top: -220px;
+
+    right: -170px;
+
+    background:
+        rgba(111, 197, 231, 0.10);
+
+}
+
+
+.circle-two {
+
+    width: 430px;
+
+    height: 430px;
+
+    bottom: -220px;
+
+    left: -230px;
+
+    background:
+        rgba(44, 161, 218, 0.08);
+
+}
+
+
+.circle-three {
+
+    width: 280px;
+
+    height: 280px;
+
+    right: -120px;
+
+    bottom: 40px;
+
+    background:
+        rgba(66, 190, 190, 0.08);
+
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.brand {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.brand-logo {
+
+    position: relative;
+
+    width: 90px;
+
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.heart-shape {
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1478e8,
+            #22a9c5
+        );
+
+    color: white;
+
+    font-size: 47px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    line-height: 1;
+
+    transform: rotate(-2deg);
+
+    box-shadow:
+        0 12px 30px
+        rgba(30, 130, 210, 0.20);
+
+}
+
+
+.heartbeat {
+
+    position: absolute;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: -3px;
+
+    top: 39px;
+
+    left: 10px;
+
+}
+
+
+.brand-text h1 {
+
+    font-size: 38px;
+
+    line-height: 0.98;
+
+    font-weight: 750;
+
+    color: #173d70;
+
+}
+
+
+.brand-text h1 span {
+
+    color: #248ca2;
+
+}
+
+
+.brand-text p {
+
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+
+    color: #6c86a8;
+
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 58px;
+
+    max-width: 610px;
+
+}
+
+
+.hero-content h2 {
+
+    font-size: clamp(38px, 4vw, 58px);
+
+    line-height: 1.08;
+
+    color: #173967;
+
+    font-weight: 750;
+
+}
+
+
+.hero-description {
+
+    margin-top: 22px;
+
+    max-width: 560px;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #547098;
+
+}
+
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+.feature-list {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    gap: 17px;
+
+}
+
+
+.feature-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+}
+
+
+.feature-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #d8effd,
+            #c5e9fa
+        );
+
+    box-shadow:
+        0 7px 20px
+        rgba(49, 142, 204, 0.08);
+
+}
+
+
+.feature-item h3 {
+
+    font-size: 17px;
+
+    color: #17335f;
+
+    margin-bottom: 3px;
+
+}
+
+
+.feature-item p {
+
+    font-size: 14px;
+
+    color: #67809f;
+
+}
+
+
+/* =====================================================
+   DOCTOR ILLUSTRATION
+===================================================== */
+
+.doctor-area {
+
+    position: absolute;
+
+    z-index: 2;
+
+    right: 20px;
+
+    bottom: 0;
+
+    width: 330px;
+
+    height: 420px;
+
+}
+
+
+/* Glow */
+
+.doctor-glow {
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 320px;
+
+    border-radius: 50%;
+
+    bottom: -80px;
+
+    left: 10px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(90, 194, 211, 0.28),
+            transparent 68%
+        );
+
+}
+
+
+/* Doctor */
+
+.doctor {
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 360px;
+
+    bottom: 0;
+
+    left: 45px;
+
+}
+
+
+/* Hair */
+
+.doctor-hair {
+
+    position: absolute;
+
+    width: 115px;
+
+    height: 120px;
+
+    top: 10px;
+
+    left: 48px;
+
+    background: #162f57;
+
+    border-radius:
+        55% 55% 45% 45%;
+
+}
+
+
+/* Face */
+
+.doctor-head {
+
+    position: absolute;
+
+    width: 85px;
+
+    height: 100px;
+
+    top: 35px;
+
+    left: 64px;
+
+    background: #f4b89c;
+
+    border-radius:
+        48% 48% 45% 45%;
+
+    z-index: 2;
+
+}
+
+
+.eye {
+
+    position: absolute;
+
+    width: 6px;
+
+    height: 6px;
+
+    background: #17335f;
+
+    border-radius: 50%;
+
+    top: 43px;
+
+}
+
+
+.eye-left {
+
+    left: 25px;
+
+}
+
+
+.eye-right {
+
+    right: 25px;
+
+}
+
+
+.doctor-smile {
+
+    position: absolute;
+
+    width: 22px;
+
+    height: 10px;
+
+    border-bottom:
+        2px solid #9e5d5a;
+
+    border-radius: 50%;
+
+    left: 31px;
+
+    top: 64px;
+
+}
+
+
+/* Neck */
+
+.doctor-neck {
+
+    position: absolute;
+
+    width: 35px;
+
+    height: 30px;
+
+    background: #edaa91;
+
+    top: 120px;
+
+    left: 89px;
+
+}
+
+
+/* Body */
+
+.doctor-body {
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 190px;
+
+    top: 140px;
+
+    left: 20px;
+
+    background: white;
+
+    border-radius:
+        45px 45px 15px 15px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(38, 83, 130, 0.12);
+
+}
+
+
+/* Coat */
+
+.coat-left {
+
+    position: absolute;
+
+    width: 70px;
+
+    height: 150px;
+
+    left: 0;
+
+    top: 35px;
+
+    background: #ffffff;
+
+    border-radius: 0 0 0 20px;
+
+    transform:
+        skewY(5deg);
+
+}
+
+
+.coat-right {
+
+    position: absolute;
+
+    width: 70px;
+
+    height: 150px;
+
+    right: 0;
+
+    top: 35px;
+
+    background: #ffffff;
+
+    border-radius: 0 0 20px 0;
+
+    transform:
+        skewY(-5deg);
+
+}
+
+
+/* Shirt */
+
+.shirt {
+
+    position: absolute;
+
+    width: 48px;
+
+    height: 100px;
+
+    top: 10px;
+
+    left: 66px;
+
+    background: #4d91bd;
+
+    clip-path:
+        polygon(
+            25% 0,
+            75% 0,
+            100% 100%,
+            0 100%
+        );
+
+}
+
+
+/* Stethoscope */
+
+.stethoscope {
+
+    position: absolute;
+
+    z-index: 4;
+
+    width: 80px;
+
+    height: 80px;
+
+    left: 49px;
+
+    top: 25px;
+
+    border:
+        3px solid #397b9d;
+
+    border-top: 0;
+
+    border-radius:
+        0 0 45px 45px;
+
+}
+
+
+.stethoscope span {
+
+    position: absolute;
+
+    width: 17px;
+
+    height: 17px;
+
+    background: #397b9d;
+
+    border-radius: 50%;
+
+    bottom: -9px;
+
+    left: 30px;
+
+}
+
+
+/* Tablet */
+
+.tablet {
+
+    position: absolute;
+
+    z-index: 7;
+
+    width: 105px;
+
+    height: 140px;
+
+    right: -20px;
+
+    top: 175px;
+
+    background: #183e6c;
+
+    border-radius: 9px;
+
+    transform:
+        rotate(10deg);
+
+    padding: 9px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(20, 53, 90, 0.22);
+
+}
+
+
+.tablet-screen {
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 4px;
+
+    background: #dff3fb;
+
+    padding: 22px 10px;
+
+}
+
+
+.tablet-screen div {
+
+    height: 7px;
+
+    margin-bottom: 12px;
+
+    border-radius: 5px;
+
+    background: #6eb4d4;
+
+}
+
+
+.tablet-screen div:first-child {
+
+    width: 70%;
+
+}
+
+
+.tablet-screen div:nth-child(2) {
+
+    width: 90%;
+
+}
+
+
+.tablet-screen div:last-child {
+
+    width: 55%;
+
+}
+
+
+/* Plant */
+
+.plant {
+
+    position: absolute;
+
+    left: -35px;
+
+    bottom: 0;
+
+    width: 80px;
+
+    height: 150px;
+
+}
+
+
+.plant-stem {
+
+    position: absolute;
+
+    width: 5px;
+
+    height: 110px;
+
+    background: #45a59c;
+
+    left: 38px;
+
+    bottom: 0;
+
+}
+
+
+.leaf {
+
+    position: absolute;
+
+    width: 40px;
+
+    height: 70px;
+
+    background: #65c4bb;
+
+    border-radius:
+        80% 0 80% 0;
+
+}
+
+
+.leaf-one {
+
+    left: 3px;
+
+    bottom: 60px;
+
+    transform:
+        rotate(-30deg);
+
+}
+
+
+.leaf-two {
+
+    right: 0;
+
+    bottom: 90px;
+
+    transform:
+        rotate(35deg);
+
+}
+
+
+.leaf-three {
+
+    left: 7px;
+
+    bottom: 110px;
+
+    transform:
+        rotate(-45deg);
+
+}
+
+
+/* Care text */
+
+.care-message {
+
+    position: absolute;
+
+    right: 0;
+
+    top: 65px;
+
+    font-size: 19px;
+
+    line-height: 1.35;
+
+    letter-spacing: 1px;
+
+    color: #5faed4;
+
+    font-weight: 600;
+
+}
+
+
+.care-message span {
+
+    color: #82b4cf;
+
+}
+
+
+/* Tomorrow */
+
+.tomorrow-message {
+
+    position: absolute;
+
+    z-index: 3;
+
+    left: 7vw;
+
+    bottom: 32px;
+
+    font-size: 19px;
+
+    line-height: 1.35;
+
+    color: #7294b9;
+
+    font-style: italic;
+
+}
+
+
+/* =====================================================
+   RIGHT LOGIN SECTION
+===================================================== */
+
+.login-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 35px;
+
+}
+
+
+/* =====================================================
+   LOGIN CARD
+===================================================== */
+
+.login-card {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    padding:
+        48px
+        50px
+        42px;
+
+    background:
+        rgba(255,255,255,0.96);
+
+    border-radius: 27px;
+
+    box-shadow:
+        0 25px 70px
+        rgba(44, 92, 130, 0.14);
+
+    border:
+        1px solid rgba(205,224,237,0.7);
+
+}
+
+
+/* Header */
+
+.login-header h2 {
+
+    font-size: 43px;
+
+    color: #173967;
+
+    font-weight: 750;
+
+}
+
+
+.login-header p {
+
+    margin-top: 8px;
+
+    font-size: 18px;
+
+    color: #7189aa;
+
+}
+
+
+/* =====================================================
+   ROLE
+===================================================== */
+
+.role-section {
+
+    margin-top: 34px;
+
+}
+
+
+.role-section > label {
+
+    display: block;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    color: #17335f;
+
+    margin-bottom: 13px;
+
+}
+
+
+.role-buttons {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.2fr;
+
+    gap: 15px;
+
+}
+
+
+.role-btn {
+
+    min-height: 64px;
+
+    border:
+        1px solid #d5e1ec;
+
+    border-radius: 13px;
+
+    background: #fbfdff;
+
+    color: #294b75;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        0.25s ease;
+
+}
+
+
+.role-btn:hover {
+
+    border-color: #2385e8;
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+.role-btn.active {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e7f4ff,
+            #f0f9ff
+        );
+
+    border:
+        1.5px solid #187de5;
+
+    color: #1472d4;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 5px 18px
+        rgba(27, 126, 224, 0.08);
+
+}
+
+
+.role-icon {
+
+    margin-right: 9px;
+
+    font-size: 21px;
+
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.input-group {
+
+    margin-top: 24px;
+
+}
+
+
+.input-group label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #17335f;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+}
+
+
+.input-wrapper {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.input-icon {
+
+    position: absolute;
+
+    left: 17px;
+
+    z-index: 2;
+
+    font-size: 20px;
+
+    opacity: 0.8;
+
+}
+
+
+.input-wrapper input {
+
+    width: 100%;
+
+    height: 60px;
+
+    border:
+        1px solid #d2deea;
+
+    border-radius: 13px;
+
+    padding:
+        0 52px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    color: #17335f;
+
+    background: #fcfeff;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.input-wrapper input:focus {
+
+    border-color: #2385e8;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(35,133,232,0.08);
+
+}
+
+
+.input-wrapper input::placeholder {
+
+    color: #91a6bd;
+
+}
+
+
+/* Password */
+
+.password-toggle {
+
+    position: absolute;
+
+    right: 15px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 19px;
+
+    opacity: 0.75;
+
+}
+
+
+/* =====================================================
+   OPTIONS
+===================================================== */
+
+.login-options {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 17px;
+
+    font-size: 14px;
+
+}
+
+
+.remember {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #405d7e;
+
+}
+
+
+.remember input {
+
+    width: 19px;
+
+    height: 19px;
+
+    accent-color: #187de5;
+
+}
+
+
+.forgot-password {
+
+    color: #187de5;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.login-btn {
+
+    width: 100%;
+
+    height: 64px;
+
+    margin-top: 26px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1478e8,
+            #248bdc
+        );
+
+    color: white;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px
+        rgba(20,120,232,0.22);
+
+    transition:
+        0.25s ease;
+
+}
+
+
+.login-btn span {
+
+    font-size: 27px;
+
+    margin-left: 10px;
+
+    vertical-align: -2px;
+
+}
+
+
+.login-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 14px 30px
+        rgba(20,120,232,0.28);
+
+}
+
+
+/* =====================================================
+   LOGIN MESSAGE
+===================================================== */
+
+#loginMessage {
+
+    text-align: center;
+
+    min-height: 20px;
+
+    margin-top: 12px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   OR DIVIDER
+===================================================== */
+
+.or-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin: 25px 0;
+
+}
+
+
+.or-divider span {
+
+    height: 1px;
+
+    flex: 1;
+
+    background: #d9e3ec;
+
+}
+
+
+.or-divider p {
+
+    color: #6f87a4;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   SIGNUP
+===================================================== */
+
+.signup-link {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 16px;
+
+    color: #365575;
+
+}
+
+
+.signup-link a {
+
+    color: #1478e8;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+
+.signup-link a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =====================================================
+   PROVIDER NOTE
+===================================================== */
+
+.provider-note {
+
+    display: none;
+
+    margin-top: 15px;
+
+    padding: 13px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: #55708d;
+
+    background: #f2f8fc;
+
+}
+
+
+/* =====================================================
+   PRIVACY
+===================================================== */
+
+.privacy-note {
+
+    margin-top: 27px;
+
+    padding: 16px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    border-radius: 14px;
+
+    background:
+        #f0f7fc;
+
+    color: #45627f;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+}
+
+
+.privacy-icon {
+
+    font-size: 20px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    .login-page {
+
+        grid-template-columns:
+            50% 50%;
+
+    }
+
+
+    .hero-section {
+
+        padding-left: 45px;
+
+        padding-right: 35px;
+
+    }
+
+
+    .brand-text h1 {
+
+        font-size: 31px;
+
+    }
+
+
+    .hero-content h2 {
+
+        font-size: 40px;
+
+    }
+
+
+    .doctor-area {
+
+        transform:
+            scale(0.8);
+
+        transform-origin:
+            bottom right;
+
+    }
+
+}
+
+
+@media (max-width: 950px) {
+
+    .login-page {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .hero-section {
+
+        min-height: auto;
+
+        padding:
+            40px 30px;
+
+    }
+
+
+    .doctor-area {
+
+        display: none;
+
+    }
+
+
+    .tomorrow-message {
+
+        display: none;
+
+    }
+
+
+    .login-section {
+
+        min-height: auto;
+
+        padding:
+            30px 20px 50px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero-section {
+
+        padding:
+            30px 22px;
+
+    }
+
+
+    .brand {
+
+        gap: 10px;
+
+    }
+
+
+    .brand-logo {
+
+        width: 65px;
+
+        height: 65px;
+
+    }
+
+
+    .heart-shape {
+
+        width: 58px;
+
+        height: 58px;
+
+        font-size: 35px;
+
+    }
+
+
+    .heartbeat {
+
+        top: 28px;
+
+        left: 8px;
+
+        font-size: 8px;
+
+    }
+
+
+    .brand-text h1 {
+
+        font-size: 25px;
+
+    }
+
+
+    .brand-text p {
+
+        font-size: 9px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .hero-content {
+
+        margin-top: 40px;
+
+    }
+
+
+    .hero-content h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 16px;
+
+    }
+
+
+    .login-section {
+
+        padding: 20px 12px 35px;
+
+    }
+
+
+    .login-card {
+
+        padding:
+            32px 22px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .login-header h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .login-header p {
+
+        font-size: 15px;
+
+    }
+
+
+    .role-buttons {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .login-options {
+
+        font-size: 13px;
+
+    }
+
+}
+/* =====================================================
+   PATIENT DASHBOARD
+===================================================== */
+
+.dashboard-body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3faff 0%,
+            #ffffff 50%,
+            #edf8fc 100%
+        );
+
+    color: #173967;
+
+}
+
+
+/* =====================================================
+   DASHBOARD HEADER
+===================================================== */
+
+.dashboard-header {
+
+    height: 82px;
+
+    padding:
+        0 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background:
+        rgba(255,255,255,0.96);
+
+    border-bottom:
+        1px solid #e1edf4;
+
+    box-shadow:
+        0 5px 25px
+        rgba(44,92,130,0.05);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 50;
+
+}
+
+
+.dashboard-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+}
+
+
+.dashboard-brand-icon {
+
+    width: 46px;
+
+    height: 46px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1478e8,
+            #26a9bd
+        );
+
+    color: white;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 7px 18px
+        rgba(20,120,232,0.18);
+
+}
+
+
+.dashboard-brand h2 {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    color: #173967;
+
+}
+
+
+.dashboard-brand p {
+
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    color: #7690ad;
+
+}
+
+
+.dashboard-user {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+}
+
+
+.user-avatar {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #e6f3fc;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.user-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.user-info strong {
+
+    font-size: 14px;
+
+    color: #173967;
+
+}
+
+
+.user-info span {
+
+    font-size: 12px;
+
+    color: #7991aa;
+
+}
+
+
+.dashboard-logout {
+
+    margin-left: 15px;
+
+    border: 1px solid #d7e5ef;
+
+    background: white;
+
+    padding: 9px 17px;
+
+    border-radius: 9px;
+
+    color: #49657f;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.dashboard-logout:hover {
+
+    border-color: #2385e8;
+
+    color: #1478e8;
+
+}
+
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+.dashboard-layout {
+
+    display: flex;
+
+    min-height:
+        calc(100vh - 82px);
+
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.dashboard-sidebar {
+
+    width: 245px;
+
+    flex-shrink: 0;
+
+    background:
+        rgba(255,255,255,0.85);
+
+    border-right:
+        1px solid #e1edf4;
+
+    padding: 25px 16px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+
+.sidebar-item {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    border: none;
+
+    background: transparent;
+
+    padding: 13px 15px;
+
+    margin-bottom: 6px;
+
+    border-radius: 11px;
+
+    color: #5c7591;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: 0.2s;
+
+}
+
+
+.sidebar-item span:first-child {
+
+    width: 24px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+}
+
+
+.sidebar-item:hover {
+
+    background: #edf7fd;
+
+    color: #1478e8;
+
+}
+
+
+.sidebar-item.active {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e3f3ff,
+            #edfaff
+        );
+
+    color: #1478e8;
+
+    font-weight: 700;
+
+}
+
+
+.sidebar-bottom {
+
+    border-top:
+        1px solid #e6eef4;
+
+    padding-top: 17px;
+
+}
+
+
+.sidebar-logout {
+
+    color: #d65b67;
+
+}
+
+
+.sidebar-logout:hover {
+
+    color: #d13e4d;
+
+    background: #fff1f2;
+
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.dashboard-content {
+
+    flex: 1;
+
+    padding:
+        42px 48px 60px;
+
+    min-width: 0;
+
+}
+
+
+/* =====================================================
+   WELCOME
+===================================================== */
+
+.dashboard-welcome {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+
+.section-label {
+
+    display: inline-block;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+    color: #55a5c4;
+
+}
+
+
+.dashboard-welcome h1 {
+
+    margin-top: 7px;
+
+    font-size: 34px;
+
+    color: #173967;
+
+}
+
+
+.dashboard-welcome h1 span {
+
+    color: #2386d9;
+
+}
+
+
+.dashboard-welcome p {
+
+    margin-top: 8px;
+
+    color: #6c85a1;
+
+    font-size: 15px;
+
+}
+
+
+.primary-add-btn {
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding:
+        13px 21px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1478e8,
+            #238fd8
+        );
+
+    color: white;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px
+        rgba(20,120,232,0.20);
+
+    transition: 0.2s;
+
+}
+
+
+.primary-add-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(20,120,232,0.25);
+
+}
+
+
+.primary-add-btn span {
+
+    font-size: 19px;
+
+    margin-right: 5px;
+
+}
+
+
+/* =====================================================
+   STAT CARDS
+===================================================== */
+
+.health-stat-grid {
+
+    margin-top: 32px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 17px;
+
+}
+
+
+.health-stat-card {
+
+    background: white;
+
+    border:
+        1px solid #e3edf4;
+
+    border-radius: 16px;
+
+    padding: 21px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(45,94,128,0.05);
+
+}
+
+
+.stat-icon {
+
+    width: 49px;
+
+    height: 49px;
+
+    border-radius: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 21px;
+
+}
+
+
+.stat-icon.blue {
+
+    background: #e6f3ff;
+
+}
+
+
+.stat-icon.teal {
+
+    background: #e4f8f6;
+
+}
+
+
+.stat-icon.purple {
+
+    background: #f0ebff;
+
+}
+
+
+.stat-icon.green {
+
+    background: #e7f8ee;
+
+}
+
+
+.health-stat-card span {
+
+    display: block;
+
+    font-size: 12px;
+
+    color: #7a91a9;
+
+}
+
+
+.health-stat-card strong {
+
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 25px;
+
+    color: #173967;
+
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.section-heading {
+
+    margin-top: 42px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 22px;
+
+    color: #173967;
+
+}
+
+
+.section-heading p {
+
+    margin-top: 5px;
+
+    font-size: 13px;
+
+    color: #7b91a8;
+
+}
+
+
+/* =====================================================
+   CATEGORY GRID
+===================================================== */
+
+.category-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.category-card {
+
+    background: white;
+
+    border:
+        1px solid #e1edf4;
+
+    border-radius: 17px;
+
+    padding: 22px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px
+        rgba(45,94,128,0.05);
+
+    transition:
+        0.25s ease;
+
+}
+
+
+.category-card:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(45,94,128,0.09);
+
+    border-color:
+        #bcdff1;
+
+}
+
+
+.category-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 24px;
+
+    background: #edf7fc;
+
+}
+
+
+.category-card h3 {
+
+    margin-top: 17px;
+
+    color: #173967;
+
+    font-size: 17px;
+
+}
+
+
+.category-card p {
+
+    margin-top: 5px;
+
+    color: #7990a8;
+
+    font-size: 13px;
+
+}
+
+
+.category-count {
+
+    margin-top: 17px;
+
+    color: #2386d9;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.dashboard-empty-state {
+
+    margin-top: 20px;
+
+    padding:
+        55px 30px;
+
+    background: white;
+
+    border:
+        1px dashed #c9dce9;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+}
+
+
+.empty-medical-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 17px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eaf7fd;
+
+    font-size: 33px;
+
+}
+
+
+.dashboard-empty-state h2 {
+
+    color: #173967;
+
+    font-size: 22px;
+
+}
+
+
+.dashboard-empty-state p {
+
+    margin:
+        9px auto 22px;
+
+    max-width: 500px;
+
+    color: #778fa8;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =====================================================
+   PAGE HEADINGS
+===================================================== */
+
+.page-heading h1 {
+
+    margin-top: 7px;
+
+    font-size: 34px;
+
+    color: #173967;
+
+}
+
+
+.page-heading p {
+
+    margin-top: 7px;
+
+    color: #7189a4;
+
+}
+
+
+/* =====================================================
+   HIDDEN SECTIONS
+===================================================== */
+
+.hidden-dashboard-section {
+
+    display: none;
+
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    background:
+        rgba(20,48,78,0.45);
+
+    backdrop-filter:
+        blur(5px);
+
+}
+
+
+.modal-overlay.show {
+
+    display: flex;
+
+}
+
+
+.record-modal {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 22px;
+
+    padding: 32px;
+
+    position: relative;
+
+    box-shadow:
+        0 30px 80px
+        rgba(19,56,90,0.25);
+
+}
+
+
+.modal-close {
+
+    position: absolute;
+
+    top: 18px;
+
+    right: 20px;
+
+    width: 35px;
+
+    height: 35px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f0f5f8;
+
+    color: #61798e;
+
+    font-size: 23px;
+
+    cursor: pointer;
+
+}
+
+
+.modal-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.modal-medical-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 14px;
+
+    background: #e6f4fc;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+}
+
+
+.modal-heading h2 {
+
+    font-size: 23px;
+
+    color: #173967;
+
+}
+
+
+.modal-heading p {
+
+    margin-top: 4px;
+
+    color: #7b91a8;
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.form-field {
+
+    margin-bottom: 19px;
+
+}
+
+
+.form-field label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #294a6e;
+
+}
+
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+
+    width: 100%;
+
+    border:
+        1px solid #d4e1eb;
+
+    border-radius: 10px;
+
+    padding:
+        12px 14px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: #27486b;
+
+    background: #fbfdff;
+
+}
+
+
+.form-field input,
+.form-field select {
+
+    height: 47px;
+
+}
+
+
+.form-field textarea {
+
+    resize: vertical;
+
+    min-height: 105px;
+
+}
+
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+
+    border-color: #2487dc;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(36,135,220,0.08);
+
+}
+
+
+.form-field small {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #8298ad;
+
+    font-size: 11px;
+
+}
+
+
+.file-upload-box {
+
+    padding: 16px;
+
+    border:
+        1px dashed #b9d2e2;
+
+    border-radius: 11px;
+
+    background: #f7fbfe;
+
+}
+
+
+.file-upload-box input {
+
+    border: none;
+
+    padding: 0;
+
+    height: auto;
+
+    background: transparent;
+
+}
+
+
+.file-upload-box span {
+
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 11px;
+
+    color: #8298ad;
+
+}
+
+
+/* =====================================================
+   MODAL ACTIONS
+===================================================== */
+
+.modal-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+}
+
+
+.secondary-btn {
+
+    padding:
+        12px 19px;
+
+    border:
+        1px solid #d6e2eb;
+
+    background: white;
+
+    border-radius: 9px;
+
+    color: #5c7289;
+
+    cursor: pointer;
+
+}
+
+
+.primary-modal-btn {
+
+    padding:
+        12px 21px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1478e8,
+            #238fd8
+        );
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================================
+   COMING SOON
+===================================================== */
+
+.coming-soon-card {
+
+    margin-top: 30px;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #e1edf4;
+
+    border-radius: 18px;
+
+}
+
+
+.coming-soon-card > div {
+
+    font-size: 45px;
+
+}
+
+
+.coming-soon-card h2 {
+
+    margin-top: 15px;
+
+}
+
+
+.coming-soon-card p {
+
+    margin-top: 8px;
+
+    color: #7890a8;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE DASHBOARD
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .health-stat-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .category-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .dashboard-sidebar {
+
+        width: 75px;
+
+        padding:
+            20px 10px;
+
+    }
+
+
+    .sidebar-item {
+
+        justify-content: center;
+
+    }
+
+
+    .sidebar-item span:last-child {
+
+        display: none;
+
+    }
+
+
+    .dashboard-content {
+
+        padding:
+            30px 25px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .dashboard-header {
+
+        padding:
+            0 15px;
+
+    }
+
+
+    .dashboard-brand p,
+    .user-info {
+
+        display: none;
+
+    }
+
+
+    .dashboard-logout {
+
+        margin-left: 4px;
+
+    }
+
+
+    .dashboard-content {
+
+        padding:
+            25px 16px 40px;
+
+    }
+
+
+    .dashboard-welcome {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .health-stat-grid,
+    .category-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .dashboard-sidebar {
+
+        display: none;
+
+    }
+
+
+    .record-modal {
+
+        padding: 25px 20px;
+
+    }
+
+}
+/* =====================================================
+   SIGNUP FORM
+===================================================== */
+
+.signup-container {
+    max-height: 92vh;
+    overflow-y: auto;
+}
+
+
+.signup-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+.signup-two-column .input-group {
+    margin-top: 24px;
+}
+
+
+.signup-container select {
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    border: 1px solid #d2deea;
+    border-radius: 13px;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: #17335f;
+    background: #fcfeff;
+}
+
+
+.optional {
+    color: #8ba0b5;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 600px) {
+
+    .signup-two-column {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================================
+   BEAUTIFUL SIGNUP PAGE
+===================================================== */
+
+.signup-page {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef9ff,
+            #f8fcff
+        );
+
+}
+
+
+.signup-wrapper {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns:
+        46% 54%;
+
+}
+
+
+/* =====================================================
+   LEFT BRAND SECTION
+===================================================== */
+
+.signup-brand-section {
+
+    padding:
+        55px 8%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #e9f7ff,
+            #f4fbff
+        );
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.signup-brand-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+
+    height: 430px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(83,190,225,0.10);
+
+    top: -180px;
+
+    right: -150px;
+
+}
+
+
+.signup-brand-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(33,139,224,0.07);
+
+    bottom: -150px;
+
+    left: -120px;
+
+}
+
+
+.signup-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.signup-logo {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 31px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1687e8,
+            #28b6cf
+        );
+
+    box-shadow:
+        0 12px 25px
+        rgba(22,135,232,0.20);
+
+}
+
+
+.signup-brand h1 {
+
+    margin: 0;
+
+    font-size: 30px;
+
+    line-height: 1.05;
+
+    color: #173967;
+
+}
+
+
+.signup-brand h1 span {
+
+    color: #238ba7;
+
+}
+
+
+.signup-brand p {
+
+    margin-top: 10px;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #6482a3;
+
+    font-weight: 700;
+
+}
+
+
+.signup-intro {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 100px;
+
+}
+
+
+.signup-intro h2 {
+
+    margin: 0;
+
+    color: #173967;
+
+    font-size: 43px;
+
+    line-height: 1.15;
+
+}
+
+
+.signup-intro p {
+
+    max-width: 570px;
+
+    margin-top: 25px;
+
+    color: #597598;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   BENEFITS
+===================================================== */
+
+.signup-benefits {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+.signup-benefit {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+}
+
+
+.benefit-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #d9f0fc;
+
+    font-size: 20px;
+
+}
+
+
+.signup-benefit strong {
+
+    display: block;
+
+    color: #173967;
+
+    font-size: 15px;
+
+}
+
+
+.signup-benefit span {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #6683a4;
+
+    font-size: 12px;
+
+}
+
+
+.signup-bottom-text {
+
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: 40px;
+
+    left: 9%;
+
+    color: #6991b7;
+
+    font-size: 15px;
+
+    font-style: italic;
+
+    line-height: 1.5;
+
+}
+
+
+/* =====================================================
+   FORM AREA
+===================================================== */
+
+.signup-form-area {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 35px;
+
+}
+
+
+.signup-card {
+
+    width: 100%;
+
+    max-width: 620px;
+
+    background: rgba(255,255,255,0.96);
+
+    border:
+        1px solid
+        #e1edf5;
+
+    border-radius: 25px;
+
+    padding: 38px 45px;
+
+    box-shadow:
+        0 20px 55px
+        rgba(43,92,128,0.10);
+
+}
+
+
+.signup-card-header {
+
+    margin-bottom: 25px;
+
+}
+
+
+.signup-small-label {
+
+    color: #45a6c8;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.signup-card-header h2 {
+
+    margin-top: 7px;
+
+    color: #173967;
+
+    font-size: 34px;
+
+}
+
+
+.signup-card-header p {
+
+    margin-top: 7px;
+
+    color: #7890aa;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   FIELDS
+===================================================== */
+
+.signup-field {
+
+    margin-top: 18px;
+
+}
+
+
+.signup-field label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #173967;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.signup-input-wrapper {
+
+    height: 49px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding:
+        0 13px;
+
+    border:
+        1px solid
+        #d5e3ee;
+
+    border-radius: 11px;
+
+    background: #fbfdff;
+
+    transition: 0.2s;
+
+}
+
+
+.signup-input-wrapper:focus-within {
+
+    border-color: #2386df;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(35,134,223,0.08);
+
+}
+
+
+.signup-input-wrapper > span {
+
+    font-size: 16px;
+
+}
+
+
+.signup-input-wrapper input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #294c70;
+
+    font-size: 13px;
+
+    font-family: inherit;
+
+}
+
+
+.signup-input-wrapper input::placeholder {
+
+    color: #9aabbb;
+
+}
+
+
+.signup-eye {
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+
+/* =====================================================
+   TWO COLUMN ROW
+===================================================== */
+
+.signup-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 17px;
+
+}
+
+
+/* =====================================================
+   GENDER
+===================================================== */
+
+.gender-select-box {
+
+    height: 49px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 0 12px;
+
+    border:
+        1px solid
+        #d5e3ee;
+
+    border-radius: 11px;
+
+    background: #fbfdff;
+
+}
+
+
+.gender-option {
+
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin: 0 !important;
+
+    color: #55718e !important;
+
+    font-size: 13px !important;
+
+    font-weight: 500 !important;
+
+}
+
+
+.gender-option input {
+
+    accent-color: #1684e5;
+
+}
+
+
+.signup-help {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #91a4b6;
+
+    font-size: 10px;
+
+}
+
+
+/* =====================================================
+   CREATE ACCOUNT BUTTON
+===================================================== */
+
+.create-account-btn {
+
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #147ce5,
+            #258fd7
+        );
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px
+        rgba(20,124,229,0.20);
+
+    transition: 0.2s;
+
+}
+
+
+.create-account-btn span {
+
+    margin-left: 8px;
+
+    font-size: 19px;
+
+}
+
+
+.create-account-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px
+        rgba(20,124,229,0.25);
+
+}
+
+
+/* =====================================================
+   LOGIN + PRIVACY
+===================================================== */
+
+.signup-message {
+
+    text-align: center;
+
+    min-height: 18px;
+
+    margin-top: 12px;
+
+    font-size: 13px;
+
+}
+
+
+.signup-login-link {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #69829c;
+
+    font-size: 13px;
+
+}
+
+
+.signup-login-link a {
+
+    margin-left: 5px;
+
+    color: #147ce5;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+
+.signup-privacy {
+
+    margin-top: 23px;
+
+    padding: 13px 15px;
+
+    border-radius: 13px;
+
+    background: #f1f8fd;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #587493;
+
+    font-size: 11px;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .signup-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .signup-brand-section {
+
+        display: none;
+
+    }
+
+
+    .signup-form-area {
+
+        padding: 20px;
+
+    }
+
+
+    .signup-card {
+
+        padding: 30px 25px;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .signup-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+}
+/* FIX ADD HEALTH RECORD MODAL */
+.modal-overlay.show-modal {
+    display: flex !important;
+}
+
+/* HEALTH RECORD CARDS */
+.record-item {
+    background: white;
+    border: 1px solid #dceaf4;
+    border-radius: 15px;
+    padding: 22px;
+    margin-top: 18px;
+    box-shadow: 0 5px 18px rgba(30, 80, 120, 0.06);
+}
+
+.record-item h3 {
+    color: #173967;
+    margin-bottom: 10px;
+}
+
+.record-item p {
+    color: #7189a4;
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+.record-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.record-actions button,
+.record-actions a {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #1685df;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.record-actions .delete-record {
+    background: #e74c5b;
+}
+/* =========================================
+   DASHBOARD SECTION FIX
+========================================= */
+
+.hidden-dashboard-section {
+    display: none !important;
+}
+
+
+/* =========================================
+   ADD HEALTH RECORD MODAL FIX
+========================================= */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-overlay.show-modal {
+    display: flex !important;
+}
+
+
+/* =========================================
+   HEALTH RECORDS
+========================================= */
+
+#recordsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.record-item {
+    background: #ffffff;
+    border: 1px solid #e2eaf0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.record-item h3 {
+    color: #17335f;
+    margin-bottom: 12px;
+}
+
+.record-item p {
+    color: #536579;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+.record-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.record-actions button {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #168ac4;
+    color: white;
+    cursor: pointer;
+}
+
+.record-actions .delete-record {
+    background: #dc4545;
+}
+
+
+/* =========================================
+   EMPTY RECORD MESSAGE
+========================================= */
+
+.dashboard-empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
+    background: #ffffff;
+    border-radius: 12px;
+    grid-column: 1 / -1;
+}
+
+.empty-medical-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   CATEGORY CARDS
+========================================= */
+
+.category-card {
+    background: #ffffff;
+    border: 1px solid #e2eaf0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.category-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.category-count {
+    color: #168ac4;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    #recordsList {
+        grid-template-columns: 1fr;
+    }
+
+    .record-item {
+        padding: 15px;
+    }
+
+    .modal-overlay {
+        padding: 10px;
+    }
+
+}
