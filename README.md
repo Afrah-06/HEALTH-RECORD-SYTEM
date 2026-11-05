@@ -27,4 +27,4 @@ Vercel uses the included `vercel.json` settings. Build command: `npm run build`.
 
 ## GitHub and Vercel
 
-Push this project folder to a GitHub repository, then import that repository from Vercel. After deployment, open the Vercel URL and verify User signup/login and Admin login. The public link is not created yet; it requires connecting a GitHub repository and Vercel account.
+This repository is connected to Vercel and deploys from GitHub. Production demo: https://health-sigma-seven.vercel.app
